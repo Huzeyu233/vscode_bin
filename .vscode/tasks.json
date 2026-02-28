@@ -1,0 +1,89 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "编译运行task",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "type": "shell",
+            "command": "g++ ${fileBasename} -g -o build/${fileBasenameNoExtension}.exe;cd build;./${fileBasenameNoExtension}.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "basicg++task",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "type": "shell",
+            "command": "g++ ${fileBasename} -g -o build/${fileBasenameNoExtension}.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "singleg++task",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "type": "shell",
+            "command": "g++ first.cpp -g -o fitask.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "singlecmaketask",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "type": "shell",
+            "command": "mkdir build;cd build;cmake -G 'MinGW Makefiles'..;mingw32-make",
+            "group": "build"
+        },
+        {
+            "label": "multig++task",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "type": "shell",
+            "command": "g++ -g main.cpp src/src.cpp -I include -o main.exe",
+            "group": "build"
+        },
+        {
+            "label": "multicmaketask",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "type": "shell",
+            "command": "mkdir build;cd build;cmake -G 'MinGW Makefiles'..;mingw32-make",
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "C:/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:/mingw64/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "调试器生成的任务。"
+        }
+    ]
+}

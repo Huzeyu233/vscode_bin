@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(jisuanjiProject)
+set(CMAKE_BUILD_TYPE Debug)
+add_compile_options(-g)
+include_directories(include)
+add_executable(jisuanji main.cpp src/src.cpp)

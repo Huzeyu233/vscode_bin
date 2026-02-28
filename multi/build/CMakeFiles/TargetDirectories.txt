@@ -1,0 +1,3 @@
+C:/code_progect/vscode_bin/multi/build/CMakeFiles/jisuanji.dir
+C:/code_progect/vscode_bin/multi/build/CMakeFiles/edit_cache.dir
+C:/code_progect/vscode_bin/multi/build/CMakeFiles/rebuild_cache.dir

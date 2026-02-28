@@ -1,0 +1,3 @@
+C:/code_progect/vscode_bin/single_file/build/CMakeFiles/this_exe.dir
+C:/code_progect/vscode_bin/single_file/build/CMakeFiles/edit_cache.dir
+C:/code_progect/vscode_bin/single_file/build/CMakeFiles/rebuild_cache.dir
