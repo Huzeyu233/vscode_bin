@@ -22,3 +22,14 @@ mkdir 新建文件夹
 pwd 查看绝对路径
 ls 查看所拥有文件
 ./xxx.exe 运行exe文件，.exe后缀可省略
+
+git命令
+git init
+
+git add .
+git commit -m name
+
+git branh name
+git checkout name 切换到新分支
+
+git reset --hard haxiname 恢复到原来，并删除后面的所有提交
